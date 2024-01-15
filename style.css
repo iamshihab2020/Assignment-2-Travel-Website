@@ -264,14 +264,18 @@ header .banner .banner-input form button:hover{
     /*=============================================
     =            Header            =
     =============================================*/
+
     
     header{
         height: 120vh;
     }
-
     header .banner{
         height: 100%;
         /* max-height: 500px; */
+    }
+
+    header .banner p{
+        margin-bottom: 25px;
     }
     header .banner .banner-input form input#go{
         width: 100%;
@@ -290,7 +294,7 @@ header .banner .banner-input form button:hover{
     header .banner .banner-input form button{
         width: 100%;
     }
-    
+
 
 
     
