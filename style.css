@@ -66,6 +66,18 @@ p{
     padding: 0 100px;
 }
 
+.px-2{
+    padding: 0 185px;
+}
+
+.py{
+    padding: 100px 0;
+}
+
+.padd{
+    padding: 100px;
+}
+
 .mt{
     margin-top: 100px;
 }
@@ -77,6 +89,11 @@ p{
 .flex-1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flex-1{
+    display: flex;
+    justify-content: center ;
     align-items: center;
 }
 
@@ -92,6 +109,13 @@ p{
     border-radius: 16px;
 }
 
+.d-none{
+    display: none;
+}
+
+.text-center{
+    text-align: center;
+}
 
 /*=====  End of Basic Setup  ======*/
 
@@ -102,7 +126,9 @@ p{
 /*=============================================
 =            Header            =
 =============================================*/
-
+header{
+    height: 100vh;
+}
 
 header nav .logo{
     display: flex;
@@ -129,6 +155,76 @@ header nav .nav-list a:hover{
 }
 
 
+header .banner{
+    /* height: 100%; */
+    max-height: 500px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("./img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header .banner p{
+    color: #ffff;
+    /* margin: 0 48px 0 24px; */
+    margin-top: 24px;
+    margin-bottom: 45px;
+}
+
+
+header .banner .banner-input{
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+}
+
+header .banner .banner-input form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .banner .banner-input form input#go{
+    padding: 14px 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+}
+
+
+header .banner .banner-input form select{
+    margin-left: 14px;
+    padding: 14px 15px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+}
+
+
+
+header .banner .banner-input form select:nth-child(3){
+    margin-right: 14px;
+}
+
+
+header .banner .banner-input form button{
+    padding: 14px 35px;
+    background: #FF5400;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .banner .banner-input form button:hover{
+    transition: 0.3s all;
+    transform: translateY(-10px);
+}
+
 
 
 
@@ -137,3 +233,69 @@ header nav .nav-list a:hover{
 
 
 
+@media (max-width:600px) {
+    
+    h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    .px {
+        padding: 0 20px;
+    }
+
+    .px-2 {
+        padding: 0 10px;
+    }
+
+    .py {
+        padding: 100px 0;
+    }
+
+    .padd {
+        padding: 20px;
+    }
+    /*=============================================
+    =            Header            =
+    =============================================*/
+    
+    header{
+        height: 120vh;
+    }
+
+    header .banner{
+        height: 100%;
+        /* max-height: 500px; */
+    }
+    header .banner .banner-input form input#go{
+        width: 100%;
+    }
+
+    header .banner .banner-input form select{
+        margin-top: 16px;
+        margin-left: 0;
+        width: 100%;
+    }
+    header .banner .banner-input form select:nth-child(3){
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    header .banner .banner-input form button{
+        width: 100%;
+    }
+    
+
+
+    
+    /*=====  End of Header  ======*/
+    
+    
+
+}
