@@ -56,7 +56,7 @@ a{
 }
 
 p{
-    color: #5A5A5D;
+    color: rgba(19, 19, 24, 0.50);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px; 
@@ -193,6 +193,9 @@ header .banner .banner-input form input#go{
     font-size: 16px;
 }
 
+header .banner .banner-input form input#go::placeholder{
+    color: rgba(19, 19, 24, 0.50);
+}
 
 header .banner .banner-input form select{
     margin-left: 14px;
@@ -233,7 +236,58 @@ header .banner .banner-input form button:hover{
 
 
 
-@media (max-width:600px) {
+/*=============================================
+=            Main            =
+=============================================*/
+
+
+/*----------  Popular  ----------*/
+section#popular{
+
+}
+
+
+
+section#popular .pop-left{
+    padding-right: 55px;
+}
+section#popular .pop-left p{
+    margin: 24px 0;
+    color: rgba(19, 19, 24, 0.70) !important;
+}
+section#popular .pop-left ul{
+    margin-left: 17px;
+}
+
+section#popular .pop-left ul li{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+section#popular .pop-right img{
+    object-fit: cover;
+
+}
+
+
+/*----------  Popular End  ----------*/
+
+
+
+/*=====  End of Main  ======*/
+
+
+
+
+
+
+/*=============================================
+=            Responsive            =
+=============================================*/
+
+@media only screen and (max-width:600px) {
     
     h1{
         font-size: 22px;
@@ -247,7 +301,7 @@ header .banner .banner-input form button:hover{
         font-size: 14px;
     }
     .px {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .px-2 {
@@ -255,7 +309,7 @@ header .banner .banner-input form button:hover{
     }
 
     .py {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .padd {
@@ -267,7 +321,7 @@ header .banner .banner-input form button:hover{
 
     
     header{
-        height: 120vh;
+        height: 100vh;
     }
     header .banner{
         height: 100%;
@@ -300,6 +354,42 @@ header .banner .banner-input form button:hover{
     
     /*=====  End of Header  ======*/
     
+
+    
+    /*=============================================
+    =            Main            =
+    =============================================*/
+    
+    /*----------  Popular   ----------*/
+    section#popular{
+        flex-direction: column;
+
+    }
+    section#popular .pop-left{
+        padding: 0;
+        text-align: justify;
+    }
+    section#popular .pop-right img{
+        max-width: 335px;
+        max-height: 342px;
+    }
+    section#popular .pop-left ul li{
+        font-size: 14px;
+    }
+
+
+
+    /*----------  Popular End ----------*/
+    
+    
+    
+    /*=====  End of Main  ======*/
+    
+    
     
 
 }
+
+
+/*=====  End of Responsive  ======*/
+
