@@ -296,18 +296,15 @@ section#destination h4{
     font-weight: 800;
 }
 
-section#destination img{
-    overflow: hidden;
-}
 
 section#destination .container {
     display: flex;
-    flex-direction: column; /* Stack rows vertically on smaller screens */
+    flex-direction: column;
 }
 
 section#destination .row {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    flex-wrap: wrap; 
     gap: 24px; 
 }
 
