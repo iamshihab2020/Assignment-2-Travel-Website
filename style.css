@@ -91,7 +91,8 @@ p{
     justify-content: space-between;
     align-items: center;
 }
-.flex-1{
+
+.flex-2{
     display: flex;
     justify-content: center ;
     align-items: center;
@@ -337,10 +338,76 @@ section#destination .item h4 {
 .f-2 {
     flex: 2;
 }
-
-
-
 /*----------  Destination End  ----------*/
+
+
+
+/*----------  Why Choose  ----------*/
+section#why{
+    
+}
+
+section#why p.para{
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+section#why .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+section#why .card h5{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+section#why .card p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+section#why .row-bottom .card{
+    width: 573px;
+    height: 284px;
+    margin: auto;
+
+}
+section#why .row-bottom {
+    display: block;
+    /* margin: auto; */
+    margin-top: 24px;
+    /* padding: 0 300px 0 300px; */
+}
+
+
+.c1{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.c2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.c3{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+.gap{
+    gap: 24px;
+}
+
+/*----------  Why Choose End  ----------*/
+
 
 
 
@@ -356,6 +423,7 @@ section#destination .item h4 {
 /*=============================================
 =            Responsive            =
 =============================================*/
+
 
 @media only screen and (max-width:600px) {
     
@@ -465,8 +533,28 @@ section#destination .item h4 {
 
     /*----------  Destination End  ----------*/
 
-        
     
+    /*----------  Why Choose  ----------*/
+
+    section#why p.para{
+        margin-bottom: 35px;
+    }
+    section#why .row-bottom .card{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    section#why .row-top{
+        flex-direction: column;
+    }
+
+
+
+
+    /*----------  Why Choose End  ----------*/
+
+
+
     /*=====  End of Main  ======*/
     
     
