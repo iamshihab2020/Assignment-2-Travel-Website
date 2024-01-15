@@ -1,3 +1,8 @@
+
+/*=============================================
+=            Basic Setup            =
+=============================================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
 html{
@@ -14,5 +19,121 @@ html{
 body{
     max-width: 100%;
 }
+
+h1{
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+h2{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h3{
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+h3 span{
+    color: #FF5400;
+}
+
+h5{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+.px{
+    padding: 0 100px;
+}
+
+.mt{
+    margin-top: 100px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.b-16{
+    border-radius: 16px;
+}
+
+
+/*=====  End of Basic Setup  ======*/
+
+
+
+
+
+/*=============================================
+=            Header            =
+=============================================*/
+
+
+header nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo h3{
+    margin-left: 15px;
+}
+
+header nav .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .nav-list a{
+    margin-left: 35px;
+}
+header nav .nav-list a:hover{
+    color: #FF5400;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+}
+
+
+
+
+
+/*=====  End of Header  ======*/
+
+
 
 
