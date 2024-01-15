@@ -56,7 +56,7 @@ a{
 }
 
 p{
-    color: rgba(19, 19, 24, 0.50);
+    color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px; 
@@ -103,6 +103,22 @@ p{
 
 .flex-col{
     flex-direction: column;
+}
+
+.f-1{
+    flex-grow: 1;
+}
+
+.f-2{
+    flex-grow: 2;
+}
+
+.f-3{
+    flex-grow: 3;
+}
+
+.f-4{
+    flex-grow: 4;
 }
 
 .b-16{
@@ -213,7 +229,7 @@ header .banner .banner-input form select:nth-child(3){
 }
 
 
-header .banner .banner-input form button{
+.btn-1{
     padding: 14px 35px;
     background: #FF5400;
     border-radius: 8px;
@@ -242,11 +258,6 @@ header .banner .banner-input form button:hover{
 
 
 /*----------  Popular  ----------*/
-section#popular{
-
-}
-
-
 
 section#popular .pop-left{
     padding-right: 55px;
@@ -271,8 +282,61 @@ section#popular .pop-right img{
 
 }
 
-
 /*----------  Popular End  ----------*/
+
+
+/*----------  Destination   ----------*/
+section#destination p{
+    margin-top: 24px;
+    margin-bottom: 45px;
+}
+section#destination h4{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+section#destination img{
+    overflow: hidden;
+}
+
+section#destination .container {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically on smaller screens */
+}
+
+section#destination .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    gap: 24px; 
+}
+
+section#destination .item {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+section#destination .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.f-1 {
+    flex: 1;
+}
+
+.f-2 {
+    flex: 2;
+}
+
+
+/*----------  Destination End  ----------*/
+
+
 
 
 
@@ -376,12 +440,26 @@ section#popular .pop-right img{
     section#popular .pop-left ul li{
         font-size: 14px;
     }
-
-
-
     /*----------  Popular End ----------*/
-    
-    
+
+    /*----------  Destination   ----------*/
+    section#destination p{
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+
+    section#destination .row {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    section#destination .item {
+        flex: 1; /* Reset the flex value for single column layout */
+    }
+
+
+    /*----------  Destination End  ----------*/
+
+        
     
     /*=====  End of Main  ======*/
     
