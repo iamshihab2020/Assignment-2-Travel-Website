@@ -493,10 +493,100 @@ section#deals .card .card-bottom h5{
     margin-bottom: 24px;
 }
 
-
-
-
 /*----------  Deals End  ----------*/
+
+
+
+/*----------  Newsletter  ----------*/
+section#news{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section#news .news-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #FF5400;
+    padding: 40px;
+    margin-right: 24px;
+}
+section#news .news-left .form-top h4{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+section#news .news-left .form-top p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 16px;
+}   
+
+section#news hr{
+    border-color: rgba(19, 19, 24, 0.10);
+}
+
+section#news .news-left form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} 
+section#news .news-left form input{
+    width: 100%;
+    margin-top: 16px;
+}
+section#news .news-left form input#name,
+section#news .news-left form input#email{
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 20px;
+    outline: none;
+    border: none;
+}
+
+section#news .news-right{
+    background: url("./img/news.png");
+    min-height: 390px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+section#news .web{
+    background: #FF5400;
+    padding: 15px 30px;
+    border-radius: 16px;
+    width: 324px;
+    height: 120px;
+    display: block;
+    margin-left: auto;
+    margin-top: 30%;
+    margin-right: 8px;
+    transform: rotate(-19.628deg);
+}
+section#news .web h5{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+section#news h4{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/*----------  Newsletter End  ----------*/
 
 
 
@@ -709,12 +799,32 @@ section#deals .card .card-bottom h5{
         margin-right: 25px;
         margin-bottom: 8px;
     }
-    
+
     section#deals .col {
         margin: 16px 0;
     }
 
     /*----------  Deals End ----------*/
+    
+    
+    /*----------  Newsletter  ----------*/
+    section#news{
+        flex-direction: column;
+        justify-content: center;
+    }
+    section#news .news-left{
+        margin-right: 0;
+        padding: 50px;
+        margin-bottom: 24px;
+    }
+
+    section#news .web{
+        margin-top: 42%;
+        margin-right: 8px;
+        transform: rotate(-19.628deg);
+    }
+
+    /*----------  Newsletter End  ----------*/
     
     
 
