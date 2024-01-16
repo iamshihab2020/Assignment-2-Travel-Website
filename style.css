@@ -689,6 +689,89 @@ section#news .web h4{
 
 /*----------  Newsletter End  ----------*/
 
+
+
+/*----------  Blog  ----------*/
+section#blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section#blog .row{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+section#blog .card {
+    margin-top: 50px;
+    width: 286px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
+}
+section#blog .card:hover {
+    cursor: pointer;
+}
+section#blog .card button{
+    transition: 0.3s all;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    display: none;
+}
+section#blog .card:hover button{
+    display: initial;
+
+}
+
+section#blog .card img{
+    width: 100%;
+    /* height: 100%; */
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto; 
+}
+section#blog .card h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+section#blog .card .card-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section#blog .card .card-icon i{
+    color: #FF5400;
+}
+section#blog .card .card-icon a,
+section#blog .card .card-icon p{
+    font-size: 14px;
+    color: #5A5A5D;
+    text-align: left;
+}
+
+section#blog .seemore{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+/*----------  Blog End  ----------*/
+
+
+
 /*=====  End of Main  ======*/
 
 
@@ -766,7 +849,11 @@ footer p#copy{
     h2{
         font-size: 20px;
     }
-    
+
+    .mt{
+        margin-top: 80px;
+    }
+
     p{
         font-size: 14px;
     }
@@ -799,7 +886,7 @@ footer p#copy{
 
     
     header{
-        height: 100vh;
+        height: 80vh;
     }
     header .banner{
         height: 100%;
@@ -909,6 +996,10 @@ footer p#copy{
         padding: 0;
         text-align: justify;
     }
+    section#popular .pop-left button{
+        margin-bottom: 30px;
+    }
+
     section#popular .pop-right img{
         max-width: 335px;
         max-height: 342px;
@@ -1062,6 +1153,18 @@ footer p#copy{
     }
 
     /*----------  Newsletter End  ----------*/
+    
+    
+    /*----------  Blog  ----------*/
+    section#blog .row{
+        flex-direction: column;
+    }
+    section#blog .card {
+        width: 286px;
+        height: 316px;
+        margin: 20px 0;
+    }
+    /*----------  Blog End  ----------*/
     
     
 
