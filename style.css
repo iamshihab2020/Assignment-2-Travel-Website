@@ -482,6 +482,7 @@ section#deals .card .card-top p{
 }
 section#deals .card .card-top p i{
     margin-right: 8px;
+    color:#ff5400;
 }
 
 section#deals .card .card-middle h5{
@@ -560,27 +561,27 @@ section#news .news-right{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
+    position: relative;
+
 }
 
 section#news .web{
     background: #FF5400;
     padding: 15px 30px;
     border-radius: 16px;
-    width: 324px;
-    height: 120px;
-    display: block;
-    margin-left: auto;
-    margin-top: 30%;
-    margin-right: 8px;
+    position: absolute;
+    bottom: 45px;
+    right: 4px;
     transform: rotate(-19.628deg);
 }
 section#news .web h5{
     color: #FFF;
     font-size: 24px;
     font-weight: 400;
+    text-align: center;
 }
 
-section#news h4{
+section#news .web h4{
     color: #FFF;
     font-size: 32px;
     font-weight: 800;
@@ -761,14 +762,13 @@ section#news h4{
         height: 100%;
         width: 90%;
         padding: 30px;
-        border-radius: 16px;
-        border: 2px solid #FFF;
-        background: rgba(255, 255, 255, 0.80);
-        /* background: red; */
-        backdrop-filter: blur(2.5px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
+
     section#deals .card-container img{
-        
         object-fit: cover;
         width: 100%;
         height: 600px;
@@ -818,11 +818,7 @@ section#news h4{
         margin-bottom: 24px;
     }
 
-    section#news .web{
-        margin-top: 42%;
-        margin-right: 8px;
-        transform: rotate(-19.628deg);
-    }
+ 
 
     /*----------  Newsletter End  ----------*/
     
