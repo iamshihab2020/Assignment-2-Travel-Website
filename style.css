@@ -727,7 +727,6 @@ section#blog .card {
 section#blog .card:hover {
     cursor: pointer;
 }
-
 section#blog .card button {
     opacity: 0; 
     transition: opacity 0.5s ease; 
