@@ -429,11 +429,19 @@ section#deals .col {
     justify-content: center;
 }
 
+section#deals .col {
+    margin: 24px 0;
+}
+
 section#deals .card-container {
     position: relative;
+    width: 100%;
 }
-section#deals .card-container{
+section#deals .card-container img{
     object-fit: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
 }
 
 section#deals .card{
@@ -446,12 +454,21 @@ section#deals .card{
     /* background: red; */
     backdrop-filter: blur(2.5px);
 }
+
 .card-pos-1{
     position: absolute;
     top: 0;
     right: 70px;
     transform: translateY(70px);
 }
+
+.card-pos-2{
+    position: absolute;
+    top: 0;
+    left: 70px;
+    transform: translateY(70px);
+}
+
 
 section#deals .card .card-top{
     display: flex;
@@ -477,9 +494,7 @@ section#deals .card .card-bottom h5{
 }
 
 
-section#deals .card {
 
-}
 
 /*----------  Deals End  ----------*/
 
@@ -531,6 +546,9 @@ section#deals .card {
 
     .para{
         margin-bottom: 35px;
+    }
+    .btn-1{
+        padding: 12px 25px;
     }
 
     /*=============================================
@@ -632,7 +650,70 @@ section#deals .card {
 
     
     /*----------  Deals  ----------*/
+    .card-pos-1{
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-pos-2{
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    section#deals .card .card-top{
+        flex-wrap: wrap;
+    }
+
+
+    section#deals .card{
+        height: 100%;
+        width: 90%;
+        padding: 30px;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        /* background: red; */
+        backdrop-filter: blur(2.5px);
+    }
+    section#deals .card-container img{
+        
+        object-fit: cover;
+        width: 100%;
+        height: 600px;
+        border-radius: 16px;
+    }
+
+    section#deals .card  p{
+        font-size: 14px;
+    }
+    section#deals .card .card-middle h5{
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    section#deals .card .card-bottom h5{
+        color: #FF5400;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    section#deals .card .card-top{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    section#deals .card .card-top p{
+        margin-right: 25px;
+        margin-bottom: 8px;
+    }
     
+    section#deals .col {
+        margin: 16px 0;
+    }
+
     /*----------  Deals End ----------*/
     
     
