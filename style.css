@@ -348,9 +348,6 @@ section#destination .item h4 {
 
 
 /*----------  Why Choose  ----------*/
-section#why{
-    
-}
 
 section#why p.para{
     margin-top: 24px;
@@ -498,6 +495,37 @@ section#deals .card .card-bottom h5{
 
 
 
+/*----------  Get  ----------*/
+section#get .get-left{
+    padding-right: 50px;
+}
+section#get .get-left p{
+    margin-bottom: 18px !important;
+}
+section#get .get-left ul li{
+    margin-left: 15px;
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px; 
+    margin-bottom: 16px;
+}
+section#get .get-left button{
+    margin-top: 10px;
+}
+section#get .get-right{
+    width: 100%;
+    position: relative;
+}
+
+
+
+/*----------  Get End  ----------*/
+
+
+
+
+
 /*----------  Newsletter  ----------*/
 section#news{
     display: flex;
@@ -627,6 +655,10 @@ footer .social a{
     color: #131318;
     font-size: 20px;
     padding: 0 10px;
+}
+footer .social a:hover{
+    color: #FF5400;
+    transition: 0.3s all;
 }
 footer hr{
     margin: 50px 0;
@@ -855,6 +887,27 @@ footer p#copy{
     /*----------  Deals End ----------*/
     
     
+    
+    /*----------  Get  ----------*/
+    section#get{
+        flex-direction: column;
+    }
+    section#get .get-left{
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+    section#get .get-right img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    section#get .get-right h4{font-size: 20px;}
+
+    /*----------  Get End  ----------*/
+    
+    
+
     /*----------  Newsletter  ----------*/
     section#news{
         flex-direction: column;
