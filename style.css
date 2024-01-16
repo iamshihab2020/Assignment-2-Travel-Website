@@ -134,6 +134,11 @@ p{
     text-align: center;
 }
 
+.para{
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
 /*=====  End of Basic Setup  ======*/
 
 
@@ -411,6 +416,76 @@ section#why .row-bottom {
 
 
 
+/*----------  Deals  ----------*/
+section#deals p{
+    color: #5A5A5D; 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+section#deals .col {
+    display: flex;
+    justify-content: center;
+}
+
+section#deals .card-container {
+    position: relative;
+}
+section#deals .card-container{
+    object-fit: cover;
+}
+
+section#deals .card{
+    max-width: 579px;
+    max-height: 389px;
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    /* background: red; */
+    backdrop-filter: blur(2.5px);
+}
+.card-pos-1{
+    position: absolute;
+    top: 0;
+    right: 70px;
+    transform: translateY(70px);
+}
+
+section#deals .card .card-top{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+section#deals .card .card-top p{
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+section#deals .card .card-top p i{
+    margin-right: 8px;
+}
+
+section#deals .card .card-middle h5{
+    margin-bottom: 16px;
+}
+section#deals .card .card-bottom h5{
+    color: #FF5400;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+
+section#deals .card {
+
+}
+
+/*----------  Deals End  ----------*/
+
+
+
+
 
 
 /*=====  End of Main  ======*/
@@ -453,6 +528,11 @@ section#why .row-bottom {
     .padd {
         padding: 20px;
     }
+
+    .para{
+        margin-bottom: 35px;
+    }
+
     /*=============================================
     =            Header            =
     =============================================*/
@@ -547,13 +627,15 @@ section#why .row-bottom {
     section#why .row-top{
         flex-direction: column;
     }
-
-
-
-
     /*----------  Why Choose End  ----------*/
 
 
+    
+    /*----------  Deals  ----------*/
+    
+    /*----------  Deals End ----------*/
+    
+    
 
     /*=====  End of Main  ======*/
     
