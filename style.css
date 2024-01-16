@@ -139,6 +139,21 @@ p{
     margin-bottom: 48px;
 }
 
+.btn-1{
+    padding: 14px 35px;
+    background: #FF5400;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: linear 0.3s;
+}
+
+.btn-1:hover{
+    background: #ff874b;
+}
+
 /*=====  End of Basic Setup  ======*/
 
 
@@ -307,15 +322,7 @@ header .banner .banner-input form select:nth-child(3){
 }
 
 
-.btn-1{
-    padding: 14px 35px;
-    background: #FF5400;
-    border-radius: 8px;
-    border: none;
-    color: #FFF;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 header .banner .banner-input form button:hover{
     transition: 0.3s all;
@@ -720,18 +727,18 @@ section#blog .card {
 section#blog .card:hover {
     cursor: pointer;
 }
-section#blog .card button{
-    transition: 0.3s all;
+
+section#blog .card button {
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; 
-    display: none;
+    z-index: 1;
 }
 section#blog .card:hover button{
-    display: initial;
-
+    opacity: 1; 
 }
 
 section#blog .card img{
@@ -766,7 +773,7 @@ section#blog .card .card-icon p{
 section#blog .seemore{
     display: block;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 /*----------  Blog End  ----------*/
 
@@ -1039,6 +1046,9 @@ footer p#copy{
     }
     section#why .row-top{
         flex-direction: column;
+    }
+    section#why .card h5{
+        font-size: 20px;
     }
     /*----------  Why Choose End  ----------*/
 
