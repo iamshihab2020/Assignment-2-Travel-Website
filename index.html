@@ -15,19 +15,26 @@
 <body>
     <!-- Header  -->
     <header class="mt-50 px">
-        <nav class="flex-1 d-none">
-            <div class="logo">
-                <img src="./img/logo.png" alt="">
-                <h3><span>Atlas </span>Travel Org.</h3>
-            </div>
+        <nav class="flex-1">
+            <ul class='nav-bar flex-1'>
+                <li class='logo'>
+                    <a href='#' class="flex-2">                
+                        <img src="./img/logo.png" alt="">
+                        <h3><span>Atlas </span>Travel Org.</h3>
+                    </a>
+                </li>
 
-            <div class="nav-list">
-                <a href="#">Home</a>
-                <a href="#">Packages</a>
-                <a href="#">Testimonial</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-            </div>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Testimonial</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
         </nav>
 
         <div class="banner mt-50 text-center b-16 padd flex-1 flex-col">
